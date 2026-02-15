@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI และวิทยาศาสตร์ข้อมูล - DESA Courses</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Prompt', sans-serif;
+        }
+        .course-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .calendar-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="course-header">
+        <div class="container">
+            <h1 class="text-center">AI และวิทยาศาสตร์ข้อมูล</h1>
+            <h2 class="text-center">หลักสูตรเกี่ยวกับปัญญาประดิษฐ์และวิทยาศาสตร์ข้อมูล</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Tabs for Courses -->
+        <ul class="nav nav-tabs" id="courseTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1" aria-selected="true">การปฏิบัติการโรงงานอัจฉริยะด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์ (มหาวิทยาลัยเกษตรศาสตร์)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course2-tab" data-bs-toggle="tab" data-bs-target="#course2" type="button" role="tab" aria-controls="course2" aria-selected="false">การสร้างระบบท่อส่งข้อมูลอัจฉริยะ (มหาวิทยาลัยเกษตรศาสตร์)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course3-tab" data-bs-toggle="tab" data-bs-target="#course3" type="button" role="tab" aria-controls="course3" aria-selected="false">การวิเคราะห์ข้อมูลเชิงปฎิบัติระดับเชี่ยวชาญ (มหาวิทยาลัยราชภัฏธนบุรี)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course4-tab" data-bs-toggle="tab" data-bs-target="#course4" type="button" role="tab" aria-controls="course4" aria-selected="false">วิทยาศาสตร์ข้อมูลและการเรียนรู้ของเครื่องแบบครบวงจร (บริษัท เอเชนเทีย คอนซัลติ้ง จำกัด (เชียงใหม่))</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course5-tab" data-bs-toggle="tab" data-bs-target="#course5" type="button" role="tab" aria-controls="course5" aria-selected="false">เจนเนอเรทีป ai สำหรับการปฎิบัติการเทคโนโลยีสารสนเทศ (มหาวิทยาลัยราชภัฏนครสวรรค์)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course6-tab" data-bs-toggle="tab" data-bs-target="#course6" type="button" role="tab" aria-controls="course6" aria-selected="false">หลักสูตรนักพัฒนาแอพพลิเคชั่นข้ามแพลตฟอร์มด้วยปัญญาประดิษฐ์ (สมาพันธ์เอสเอ็มอีไทย ปทุมธานี)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course7-tab" data-bs-toggle="tab" data-bs-target="#course7" type="button" role="tab" aria-controls="course7" aria-selected="false">สถาปนิกนวัตกรรมสังคมยุค AI: สร้างเว็บไซต์วิเคราะห์ข้อมูลและตรวจสอบความโปร่งใสด้วย generative AI (Cluster Wellness Tourism สมาพันธ์ SME ไทย)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course8-tab" data-bs-toggle="tab" data-bs-target="#course8" type="button" role="tab" aria-controls="course8" aria-selected="false">Zero to Hero: AI-Powered Automated Software Tester Bootcamp (JavaScript Edition) (รีเลิร์น เทค โซลูชั่น จำกัด)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course9-tab" data-bs-toggle="tab" data-bs-target="#course9" type="button" role="tab" aria-controls="course9" aria-selected="false">Data Science Bootcamp with Generative AI (ธิงค์กิ้ง ทู เรฟโวลูชั่น จำกัด)</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="courseTabsContent">
+            <!-- Course 1 -->
+            <div class="tab-pane fade show active" id="course1" role="tabpanel" aria-labelledby="course1-tab">
+                <ul class="nav nav-tabs mt-3" id="batchTabs1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="batch1-1-tab" data-bs-toggle="tab" data-bs-target="#batch1-1" type="button" role="tab" aria-controls="batch1-1" aria-selected="true">Batch 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="batch1-2-tab" data-bs-toggle="tab" data-bs-target="#batch1-2" type="button" role="tab" aria-controls="batch1-2" aria-selected="false">Batch 2</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="batchTabs1Content">
+                    <!-- Batch 1-1 -->
+                    <div class="tab-pane fade show active" id="batch1-1" role="tabpanel" aria-labelledby="batch1-1-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยเกษตรศาสตร์</p>
+                                        <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                        <p><strong>รูปแบบ:</strong> กทม</p>
+                                        <p><strong>จังหวัด:</strong> กทม</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> การปฏิบัติการโรงงานอัจฉริยะด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์</p>
+                                        <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 400 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                        <p><strong>Batch:</strong> 1</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> 1,2,3,6,7,8,9 เมษายน 2569</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 1</h4>
+                                    <div id="calendar1-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Batch 1-2 -->
+                    <div class="tab-pane fade" id="batch1-2" role="tabpanel" aria-labelledby="batch1-2-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>Batch:</strong> 2</p>
+                                        <p><strong>วันที่เรียน:</strong> 4,5,11,18,19,25,26 เมษายน 2569</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 2</h4>
+                                    <div id="calendar1-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="tab-pane fade" id="course2" role="tabpanel" aria-labelledby="course2-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยเกษตรศาสตร์</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> กทม</p>
+                                <p><strong>จังหวัด:</strong> กทม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> การสร้างระบบท่อส่งข้อมูลอัจฉริยะ</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 50 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 200 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 250 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 50-500 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 50 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 500 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="tab-pane fade" id="course3" role="tabpanel" aria-labelledby="course3-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยราชภัฏธนบุรี</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> กทม</p>
+                                <p><strong>จังหวัด:</strong> กทม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> การวิเคราะห์ข้อมูลเชิงปฎิบัติระดับเชี่ยวชาญ</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 40 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 160 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 200 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 150-650 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 150 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 650 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 4 -->
+            <div class="tab-pane fade" id="course4" role="tabpanel" aria-labelledby="course4-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> บริษัท เอเชนเทีย คอนซัลติ้ง จำกัด (เชียงใหม่)</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> เชียงใหม่</p>
+                                <p><strong>จังหวัด:</strong> เชียงใหม่</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> วิทยาศาสตร์ข้อมูลและการเรียนรู้ของเครื่องแบบครบวงจร</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Factory</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 50 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 200 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 250 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 20-50 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 20 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 50 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 5 -->
+            <div class="tab-pane fade" id="course5" role="tabpanel" aria-labelledby="course5-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยราชภัฏนครสวรรค์</p>
+                                <p><strong>สถานที่จัด:</strong> Online</p>
+                                <p><strong>รูปแบบ:</strong> Online</p>
+                                <p><strong>จังหวัด:</strong> Online</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> เจนเนอเรทีป ai สำหรับการปฎิบัติการเทคโนโลยีสารสนเทศ</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company, สำหรับ Factory</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 400 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 6 -->
+            <div class="tab-pane fade" id="course6" role="tabpanel" aria-labelledby="course6-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> สมาพันธ์เอสเอ็มอีไทย ปทุมธานี</p>
+                                <p><strong>สถานที่จัด:</strong> Online</p>
+                                <p><strong>รูปแบบ:</strong> Online</p>
+                                <p><strong>จังหวัด:</strong> Online</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> หลักสูตรนักพัฒนาแอพพลิเคชั่นข้ามแพลตฟอร์มด้วยปัญญาประดิษฐ์</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 400 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 7 -->
+            <div class="tab-pane fade" id="course7" role="tabpanel" aria-labelledby="course7-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> Cluster Wellness Tourism สมาพันธ์ SME ไทย</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> กทม</p>
+                                <p><strong>จังหวัด:</strong> กทม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> สถาปนิกนวัตกรรมสังคมยุค AI: สร้างเว็บไซต์วิเคราะห์ข้อมูลและตรวจสอบความโปร่งใสด้วย generative AI</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 60 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 240 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 300 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 50 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 50 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 50 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 8 -->
+            <div class="tab-pane fade" id="course8" role="tabpanel" aria-labelledby="course8-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> รีเลิร์น เทค โซลูชั่น จำกัด</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> กทม</p>
+                                <p><strong>จังหวัด:</strong> กทม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> Zero to Hero: AI-Powered Automated Software Tester Bootcamp (JavaScript Edition)</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company, สำหรับ Factory</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 250 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 250 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 500 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 100 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 100 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 100 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 9 -->
+            <div class="tab-pane fade" id="course9" role="tabpanel" aria-labelledby="course9-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> ธิงค์กิ้ง ทู เรฟโวลูชั่น จำกัด</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> กทม</p>
+                                <p><strong>จังหวัด:</strong> กทม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> Data Science Bootcamp with Generative AI</p>
+                                <p><strong>หัวข้อ:</strong> AI และวิทยาศาสตร์ข้อมูล</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company, สำหรับ Factory</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 250 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 0 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 250 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 250 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 250 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 250 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar9"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script>
+        // Initialize calendars
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendar1 = new FullCalendar.Calendar(document.getElementById('calendar1-1'), {
+                initialView: 'dayGridMonth',
+                locale: 'th',
+                events: [
+                    { title: 'การปฏิบัติการโรงงานอัจฉริยะด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์', start: '2026-04-01', end: '2026-04-10' }
+                ]
+            });
+            calendar1.render();
+
+            var calendar2 = new FullCalendar.Calendar(document.getElementById('calendar1-2'), {
+                initialView: 'dayGridMonth',
+                locale: 'th',
+                events: [
+                    { title: 'การปฏิบัติการโรงงานอัจฉริยะด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์ Batch 2', start: '2026-04-04', end: '2026-04-27' }
+                ]
+            });
+            calendar2.render();
+
+            // For courses without specific dates, use placeholder
+            for (let i = 2; i <= 9; i++) {
+                var cal = new FullCalendar.Calendar(document.getElementById('calendar' + i), {
+                    initialView: 'dayGridMonth',
+                    locale: 'th',
+                    events: []
+                });
+                cal.render();
+            }
+        });
+    </script>
+</body>
+</html>

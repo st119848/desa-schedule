@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิศวกรรมเฉพาะทางและควบคุมคุณภาพ - DESA Courses</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Prompt', sans-serif;
+        }
+        .course-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .calendar-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="course-header">
+        <div class="container">
+            <h1 class="text-center">วิศวกรรมเฉพาะทางและควบคุมคุณภาพ</h1>
+            <h2 class="text-center">หลักสูตรวิศวกรรมเฉพาะทางและควบคุมคุณภาพ</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Tabs for Courses -->
+        <ul class="nav nav-tabs" id="courseTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1" aria-selected="true">วิศกรรมการออกแบบระบบหุ่นยนต์อุตสาหกรรม: การโปรแกรม, การออกแบบ และการจำลองสถานการณ์โลกเสมือน (บริษัท ไดแด็คต้า เทค จำกัด)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course2-tab" data-bs-toggle="tab" data-bs-target="#course2" type="button" role="tab" aria-controls="course2" aria-selected="false">การทดสอบระบบอัตโนมัติและวิศวกรรมคุณภาพซอฟต์แวร์ขั้นสูง (สมาคมนิสิตเก่าจุฬาลงกรณ์มหาวิทยาลัย)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course3-tab" data-bs-toggle="tab" data-bs-target="#course3" type="button" role="tab" aria-controls="course3" aria-selected="false">การทดสอบระบบอัตโนมัติและวิศวกรรมคุณภาพซอฟต์แวร์ขั้นสูง (มหาวิทยาลัยราชภัฏนครสวรรค์)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="course4-tab" data-bs-toggle="tab" data-bs-target="#course4" type="button" role="tab" aria-controls="course4" aria-selected="false">ASME Quality Assurance in Bioprocessing Equipment for Welding Processes (ห้องปฏิบัติการระบบการผลิตยืดหยุ่น คณะวิศวกรรมศาสตร์มหาวิทยาลัยมหิดล)</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="courseTabsContent">
+            <!-- Course 1 -->
+            <div class="tab-pane fade show active" id="course1" role="tabpanel" aria-labelledby="course1-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> บริษัท ไดแด็คต้า เทค จำกัด</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> กทม</p>
+                                <p><strong>จังหวัด:</strong> กทม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> วิศกรรมการออกแบบระบบหุ่นยนต์อุตสาหกรรม: การโปรแกรม, การออกแบบ และการจำลองสถานการณ์โลกเสมือน</p>
+                                <p><strong>หัวข้อ:</strong> วิศวกรรมเฉพาะทางและควบคุมคุณภาพ</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Factory</p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 40 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 160 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 200 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 20-50 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 20 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 50 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="tab-pane fade" id="course2" role="tabpanel" aria-labelledby="course2-tab">
+                <ul class="nav nav-tabs mt-3" id="batchTabs2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="batch2-1-tab" data-bs-toggle="tab" data-bs-target="#batch2-1" type="button" role="tab" aria-controls="batch2-1" aria-selected="true">Batch 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="batch2-2-tab" data-bs-toggle="tab" data-bs-target="#batch2-2" type="button" role="tab" aria-controls="batch2-2" aria-selected="false">Batch 2</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="batchTabs2Content">
+                    <!-- Batch 2-1 -->
+                    <div class="tab-pane fade show active" id="batch2-1" role="tabpanel" aria-labelledby="batch2-1-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> สมาคมนิสิตเก่าจุฬาลงกรณ์มหาวิทยาลัย</p>
+                                        <p><strong>สถานที่จัด:</strong> Online</p>
+                                        <p><strong>รูปแบบ:</strong> Online</p>
+                                        <p><strong>จังหวัด:</strong> Online</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> การทดสอบระบบอัตโนมัติและวิศวกรรมคุณภาพซอฟต์แวร์ขั้นสูง</p>
+                                        <p><strong>หัวข้อ:</strong> วิศวกรรมเฉพาะทางและควบคุมคุณภาพ</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company, สำหรับ Factory</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 80 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 320 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 400 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                        <p><strong>Batch:</strong> 1</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 1</h4>
+                                    <div id="calendar2-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Batch 2-2 -->
+                    <div class="tab-pane fade" id="batch2-2" role="tabpanel" aria-labelledby="batch2-2-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>Batch:</strong> 2</p>
+                                        <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 2</h4>
+                                    <div id="calendar2-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="tab-pane fade" id="course3" role="tabpanel" aria-labelledby="course3-tab">
+                <ul class="nav nav-tabs mt-3" id="batchTabs3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="batch3-1-tab" data-bs-toggle="tab" data-bs-target="#batch3-1" type="button" role="tab" aria-controls="batch3-1" aria-selected="true">Batch 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="batch3-2-tab" data-bs-toggle="tab" data-bs-target="#batch3-2" type="button" role="tab" aria-controls="batch3-2" aria-selected="false">Batch 2</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="batchTabs3Content">
+                    <!-- Batch 3-1 -->
+                    <div class="tab-pane fade show active" id="batch3-1" role="tabpanel" aria-labelledby="batch3-1-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยราชภัฏนครสวรรค์</p>
+                                        <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                        <p><strong>รูปแบบ:</strong> นครสวรรค์</p>
+                                        <p><strong>จังหวัด:</strong> นครสวรรค์</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> การทดสอบระบบอัตโนมัติและวิศวกรรมคุณภาพซอฟต์แวร์ขั้นสูง</p>
+                                        <p><strong>หัวข้อ:</strong> วิศวกรรมเฉพาะทางและควบคุมคุณภาพ</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>เหมาะสำหรับ:</strong> สำหรับ Financial Related Company, สำหรับ Factory</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 60 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 240 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 300 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 50-300 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 50 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 300 คน</p>
+                                        <p><strong>Batch:</strong> 1</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 1</h4>
+                                    <div id="calendar3-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Batch 3-2 -->
+                    <div class="tab-pane fade" id="batch3-2" role="tabpanel" aria-labelledby="batch3-2-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>Batch:</strong> 2</p>
+                                        <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 2</h4>
+                                    <div id="calendar3-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 4 -->
+            <div class="tab-pane fade" id="course4" role="tabpanel" aria-labelledby="course4-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3>รายละเอียดหลักสูตร</h3>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>ชื่อบริษัท:</strong> ห้องปฏิบัติการระบบการผลิตยืดหยุ่น คณะวิศวกรรมศาสตร์มหาวิทยาลัยมหิดล</p>
+                                <p><strong>สถานที่จัด:</strong> Onsite</p>
+                                <p><strong>รูปแบบ:</strong> นครปฐม</p>
+                                <p><strong>จังหวัด:</strong> นครปฐม</p>
+                                <p><strong>ชื่อหลักสูตร:</strong> ASME Quality Assurance in Bioprocessing Equipment for Welding Processes</p>
+                                <p><strong>หัวข้อ:</strong> วิศวกรรมเฉพาะทางและควบคุมคุณภาพ</p>
+                                <p><strong>ระยะเวลาเรียน:</strong> 5 วัน</p>
+                                <p><strong>เหมาะสำหรับ:</strong></p>
+                                <p><strong>จำนวนผู้เรียน:</strong></p>
+                                <ul>
+                                    <li>นักศึกษา: 500 คน</li>
+                                    <li>บุคคลในตลาดแรงงาน: 500 คน</li>
+                                    <li>จำนวนรวมทั้งหมด: 1000 คน</li>
+                                </ul>
+                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 200 คน</p>
+                                <p><strong>ห้องรองรับน้อยสุด:</strong> 200 คน</p>
+                                <p><strong>ห้องรองรับมากสุด:</strong> 200 คน</p>
+                                <p><strong>Batch:</strong> 1</p>
+                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                <p><strong>วันที่เรียน:</strong> ไม่ระบุ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="calendar-container">
+                            <h4 class="text-center mb-3">ตารางอบรม</h4>
+                            <div id="calendar4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script>
+        // Initialize calendars
+        document.addEventListener('DOMContentLoaded', function() {
+            // For courses without specific dates, use placeholder
+            for (let i = 1; i <= 4; i++) {
+                if (i === 2) {
+                    var cal1 = new FullCalendar.Calendar(document.getElementById('calendar2-1'), {
+                        initialView: 'dayGridMonth',
+                        locale: 'th',
+                        events: []
+                    });
+                    cal1.render();
+                    var cal2 = new FullCalendar.Calendar(document.getElementById('calendar2-2'), {
+                        initialView: 'dayGridMonth',
+                        locale: 'th',
+                        events: []
+                    });
+                    cal2.render();
+                } else if (i === 3) {
+                    var cal1 = new FullCalendar.Calendar(document.getElementById('calendar3-1'), {
+                        initialView: 'dayGridMonth',
+                        locale: 'th',
+                        events: []
+                    });
+                    cal1.render();
+                    var cal2 = new FullCalendar.Calendar(document.getElementById('calendar3-2'), {
+                        initialView: 'dayGridMonth',
+                        locale: 'th',
+                        events: []
+                    });
+                    cal2.render();
+                } else {
+                    var cal = new FullCalendar.Calendar(document.getElementById('calendar' + i), {
+                        initialView: 'dayGridMonth',
+                        locale: 'th',
+                        events: []
+                    });
+                    cal.render();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
