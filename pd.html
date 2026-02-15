@@ -98,81 +98,184 @@
             </div>
             <!-- Course 2 -->
             <div class="tab-pane fade" id="course2" role="tabpanel" aria-labelledby="course2-tab">
-                <div class="row mt-3">
-                    <div class="col-lg-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h3>รายละเอียดหลักสูตร</h3>
+                <ul class="nav nav-tabs mt-3" id="batchTabs2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="batch2-1-tab" data-bs-toggle="tab" data-bs-target="#batch2-1" type="button" role="tab" aria-controls="batch2-1" aria-selected="true">Batch 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="batch2-2-tab" data-bs-toggle="tab" data-bs-target="#batch2-2" type="button" role="tab" aria-controls="batch2-2" aria-selected="false">Batch 2</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="batchTabs2Content">
+                    <!-- Batch 2-1 -->
+                    <div class="tab-pane fade show active" id="batch2-1" role="tabpanel" aria-labelledby="batch2-1-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยราชภัฎวไลยอลงกรณ์</p>
+                                        <p><strong>สถานที่จัด:</strong> Online</p>
+                                        <p><strong>รูปแบบ:</strong> Online</p>
+                                        <p><strong>จังหวัด:</strong> Online</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> การออกแบบประสบการณ์และส่วนติดต่อผู้ใช้ระดับมืออาชีพด้วย Figma</p>
+                                        <p><strong>หัวข้อ:</strong> การออกแบบผลิตภัณฑ์และธุรกิจ</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>เหมาะสำหรับ:</strong> สำหรับ Factory</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 400 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                        <p><strong>Batch:</strong> 1</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> 6,7,8,9,10,17,20 เมษายน 2569</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยราชภัฎวไลยอลงกรณ์</p>
-                                <p><strong>สถานที่จัด:</strong> Online</p>
-                                <p><strong>รูปแบบ:</strong> Online</p>
-                                <p><strong>จังหวัด:</strong> Online</p>
-                                <p><strong>ชื่อหลักสูตร:</strong> การออกแบบประสบการณ์และส่วนติดต่อผู้ใช้ระดับมืออาชีพด้วย Figma</p>
-                                <p><strong>หัวข้อ:</strong> การออกแบบผลิตภัณฑ์และธุรกิจ</p>
-                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
-                                <p><strong>เหมาะสำหรับ:</strong> สำหรับ Factory</p>
-                                <p><strong>จำนวนผู้เรียน:</strong></p>
-                                <ul>
-                                    <li>นักศึกษา: 400 คน</li>
-                                    <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
-                                    <li>จำนวนรวมทั้งหมด: 2000 คน</li>
-                                </ul>
-                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
-                                <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
-                                <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
-                                <p><strong>Batch:</strong> 1,2</p>
-                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
-                                <p><strong>วันที่เรียน Batch 1:</strong> 6,7,8,9,10,17,20 เมษายน 2569</p>
-                                <p><strong>วันที่เรียน Batch 2:</strong> 25,26,2,3,9,10,16 พฤษภาคม 2569</p>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 1</h4>
+                                    <div id="calendar2-1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="calendar-container">
-                            <h4 class="text-center mb-3">ตารางอบรม</h4>
-                            <div id="calendar2"></div>
+                    <!-- Batch 2-2 -->
+                    <div class="tab-pane fade" id="batch2-2" role="tabpanel" aria-labelledby="batch2-2-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> มหาวิทยาลัยราชภัฎวไลยอลงกรณ์</p>
+                                        <p><strong>สถานที่จัด:</strong> Online</p>
+                                        <p><strong>รูปแบบ:</strong> Online</p>
+                                        <p><strong>จังหวัด:</strong> Online</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> การออกแบบประสบการณ์และส่วนติดต่อผู้ใช้ระดับมืออาชีพด้วย Figma</p>
+                                        <p><strong>หัวข้อ:</strong> การออกแบบผลิตภัณฑ์และธุรกิจ</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>เหมาะสำหรับ:</strong> สำหรับ Factory</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 400 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                        <p><strong>Batch:</strong> 2</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> 25,26,2,3,9,10,16 พฤษภาคม 2569</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 2</h4>
+                                    <div id="calendar2-2"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Course 3 -->
             <div class="tab-pane fade" id="course3" role="tabpanel" aria-labelledby="course3-tab">
-                <div class="row mt-3">
-                    <div class="col-lg-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h3>รายละเอียดหลักสูตร</h3>
+                <ul class="nav nav-tabs mt-3" id="batchTabs3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="batch3-1-tab" data-bs-toggle="tab" data-bs-target="#batch3-1" type="button" role="tab" aria-controls="batch3-1" aria-selected="true">Batch 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="batch3-2-tab" data-bs-toggle="tab" data-bs-target="#batch3-2" type="button" role="tab" aria-controls="batch3-2" aria-selected="false">Batch 2</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="batchTabs3Content">
+                    <!-- Batch 3-1 -->
+                    <div class="tab-pane fade show active" id="batch3-1" role="tabpanel" aria-labelledby="batch3-1-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> สมาคมแฟรนไชน์และไลเซนส์ประเทศไทย</p>
+                                        <p><strong>สถานที่จัด:</strong> Online</p>
+                                        <p><strong>รูปแบบ:</strong> Online</p>
+                                        <p><strong>จังหวัด:</strong> Online</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> หลักสูตรบูทแคมป์นักวิเคราะห์ธุรกิจไอทีแบบไฮบริดและที่ปรึกษานวัตกรรม</p>
+                                        <p><strong>หัวข้อ:</strong> การออกแบบผลิตภัณฑ์และธุรกิจ</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 400 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                        <p><strong>Batch:</strong> 1</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> 6,7,8,9,10,17,20 เมษายน 2569</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p><strong>ชื่อบริษัท:</strong> สมาคมแฟรนไชน์และไลเซนส์ประเทศไทย</p>
-                                <p><strong>สถานที่จัด:</strong> Online</p>
-                                <p><strong>รูปแบบ:</strong> Online</p>
-                                <p><strong>จังหวัด:</strong> Online</p>
-                                <p><strong>ชื่อหลักสูตร:</strong> หลักสูตรบูทแคมป์นักวิเคราะห์ธุรกิจไอทีแบบไฮบริดและที่ปรึกษานวัตกรรม</p>
-                                <p><strong>หัวข้อ:</strong> การออกแบบผลิตภัณฑ์และธุรกิจ</p>
-                                <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
-                                <p><strong>จำนวนผู้เรียน:</strong></p>
-                                <ul>
-                                    <li>นักศึกษา: 400 คน</li>
-                                    <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
-                                    <li>จำนวนรวมทั้งหมด: 2000 คน</li>
-                                </ul>
-                                <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
-                                <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
-                                <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
-                                <p><strong>Batch:</strong> 1,2</p>
-                                <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
-                                <p><strong>วันที่เรียน Batch 1:</strong> 6,7,8,9,10,17,20 เมษายน 2569</p>
-                                <p><strong>วันที่เรียน Batch 2:</strong> 25,26,2,3,9,10,16 พฤษภาคม 2569</p>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 1</h4>
+                                    <div id="calendar3-1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="calendar-container">
-                            <h4 class="text-center mb-3">ตารางอบรม</h4>
-                            <div id="calendar3"></div>
+                    <!-- Batch 3-2 -->
+                    <div class="tab-pane fade" id="batch3-2" role="tabpanel" aria-labelledby="batch3-2-tab">
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h3>รายละเอียดหลักสูตร</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>ชื่อบริษัท:</strong> สมาคมแฟรนไชน์และไลเซนส์ประเทศไทย</p>
+                                        <p><strong>สถานที่จัด:</strong> Online</p>
+                                        <p><strong>รูปแบบ:</strong> Online</p>
+                                        <p><strong>จังหวัด:</strong> Online</p>
+                                        <p><strong>ชื่อหลักสูตร:</strong> หลักสูตรบูทแคมป์นักวิเคราะห์ธุรกิจไอทีแบบไฮบริดและที่ปรึกษานวัตกรรม</p>
+                                        <p><strong>หัวข้อ:</strong> การออกแบบผลิตภัณฑ์และธุรกิจ</p>
+                                        <p><strong>ระยะเวลาเรียน:</strong> 7 วัน</p>
+                                        <p><strong>จำนวนผู้เรียน:</strong></p>
+                                        <ul>
+                                            <li>นักศึกษา: 400 คน</li>
+                                            <li>บุคคลในตลาดแรงงาน: 1600 คน</li>
+                                            <li>จำนวนรวมทั้งหมด: 2000 คน</li>
+                                        </ul>
+                                        <p><strong>จำนวนคนที่ห้องรองรับ:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับน้อยสุด:</strong> 1000 คน</p>
+                                        <p><strong>ห้องรองรับมากสุด:</strong> 1000 คน</p>
+                                        <p><strong>Batch:</strong> 2</p>
+                                        <p><strong>เวลา:</strong> 09:00-17:00 น. ทุกครั้ง</p>
+                                        <p><strong>วันที่เรียน:</strong> 25,26,2,3,9,10,16 พฤษภาคม 2569</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calendar-container">
+                                    <h4 class="text-center mb-3">ตารางอบรม Batch 2</h4>
+                                    <div id="calendar3-2"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,30 +307,102 @@
         document.addEventListener('DOMContentLoaded', function() {
             var calendar1 = new FullCalendar.Calendar(document.getElementById('calendar1'), {
                 initialView: 'dayGridMonth',
+                initialDate: '2026-04-01',
                 locale: 'th',
                 events: [
-                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-06', end: '2026-04-21' }
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-06' },
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-07' },
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-08' },
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-09' },
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-10' },
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-17' },
+                    { title: 'วิศวกรออกแบบผลิตภัณฑ์ดิจิทัล', start: '2026-04-20' }
                 ]
             });
             calendar1.render();
 
-            var calendar2 = new FullCalendar.Calendar(document.getElementById('calendar2'), {
+            var calendar2_1 = new FullCalendar.Calendar(document.getElementById('calendar2-1'), {
                 initialView: 'dayGridMonth',
+                initialDate: '2026-04-01',
                 locale: 'th',
                 events: [
-                    { title: 'การออกแบบ UX/UI ด้วย Figma', start: '2026-04-06', end: '2026-05-17' }
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-06' },
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-07' },
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-08' },
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-09' },
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-10' },
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-17' },
+                    { title: 'การออกแบบ UX/UI Batch 1', start: '2026-04-20' }
                 ]
             });
-            calendar2.render();
+            calendar2_1.render();
 
-            var calendar3 = new FullCalendar.Calendar(document.getElementById('calendar3'), {
+            var calendar2_2 = new FullCalendar.Calendar(document.getElementById('calendar2-2'), {
                 initialView: 'dayGridMonth',
+                initialDate: '2026-04-01',
                 locale: 'th',
                 events: [
-                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที', start: '2026-04-06', end: '2026-05-17' }
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-04-25' },
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-04-26' },
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-05-02' },
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-05-03' },
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-05-09' },
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-05-10' },
+                    { title: 'การออกแบบ UX/UI Batch 2', start: '2026-05-16' }
                 ]
             });
-            calendar3.render();
+            calendar2_2.render();
+
+            var calendar3_1 = new FullCalendar.Calendar(document.getElementById('calendar3-1'), {
+                initialView: 'dayGridMonth',
+                initialDate: '2026-04-01',
+                locale: 'th',
+                events: [
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-06' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-07' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-08' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-09' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-10' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-17' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 1', start: '2026-04-20' }
+                ]
+            });
+            calendar3_1.render();
+
+            var calendar3_2 = new FullCalendar.Calendar(document.getElementById('calendar3-2'), {
+                initialView: 'dayGridMonth',
+                initialDate: '2026-04-01',
+                locale: 'th',
+                events: [
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-04-25' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-04-26' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-05-02' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-05-03' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-05-09' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-05-10' },
+                    { title: 'บูทแคมป์นักวิเคราะห์ธุรกิจไอที Batch 2', start: '2026-05-16' }
+                ]
+            });
+            calendar3_2.render();
+
+            // Re-render calendars when tabs are shown
+            // Re-render calendars when tabs are shown
+            document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(tab => {
+                tab.addEventListener('shown.bs.tab', function (event) {
+                    var targetId = event.target.getAttribute('data-bs-target');
+                    if (targetId === '#batch2-1') calendar2_1.render();
+                    if (targetId === '#batch2-2') calendar2_2.render();
+                    if (targetId === '#batch3-1') calendar3_1.render();
+                    if (targetId === '#batch3-2') calendar3_2.render();
+                    
+                    // Also maintain main course tab rendering which might default to first batch
+                     if (event.target.id === 'course2-tab') {
+                        calendar2_1.render();
+                    } else if (event.target.id === 'course3-tab') {
+                        calendar3_1.render();
+                    }
+                });
+            });
         });
     </script>
 </body>
